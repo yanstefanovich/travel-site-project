@@ -10,6 +10,15 @@
       padding-right: 65px;
     }
 
+
+    &--gutters-large{
+      margin-right: -100px;
+    }
+
+    &--gutters-large > div {
+      padding-right: 100px;
+    }
+
     @mixin atMedium{
       &__medium-4{
         float: left;
@@ -18,6 +27,11 @@
 
       &row__medium-4--larger{
         width: 37%;
+      }
+
+      &__medium-6{
+        float: left;
+        width: 50%;
       }
 
       &__medium-8{
