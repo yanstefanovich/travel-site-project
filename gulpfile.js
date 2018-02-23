@@ -1,2 +1,3 @@
-const styles = require('./gulp/tasks/styles');
-const watch = require('./gulp/tasks/watch');
+require('./gulp/tasks/styles');
+require('./gulp/tasks/watch');
+require('./gulp/tasks/sprites');
