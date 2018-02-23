@@ -1,5 +1,5 @@
 .section-title{
-  font-size: 2.25rem;
+  font-size: 2.125rem;
   margin-bottom: 3.25rem;
   font-weight: 300;
   text-align: center;
@@ -20,6 +20,31 @@
     @mixin atSmall{
       margin-right: 0.5rem;
       vertical-align: top;
+    }
+  }
+
+  &__icon-top{
+    display: block;
+    margin: 0 auto 0.5em auto;
+
+    @mixin atSmall{
+      display: inline;
+      margin: 0;
+      margin-right: 0.5rem;
+      vertical-align: -18%;
+    }
+
+  }
+
+  &--blue{
+    color: $mainBlue;
+  }
+
+  &--no-b-margin-until-large{
+    margin-bottom: 0;
+
+    @mixin atLarge{
+      margin-bottom: 3.25rem;
     }
   }
 }

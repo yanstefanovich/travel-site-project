@@ -3,16 +3,16 @@
     @mixin clearFix;
 
     &--gutters{
-      margin-right: -65px;
+      margin-right: -3.5%;
     }
 
     &--gutters > div {
-      padding-right: 65px;
+      padding-right: 3.5%;
     }
 
 
     &--gutters-large{
-      margin-right: -55px;
+      margin-right: -5%;
 
       @mixin atLarge{
         margin-right: -100px;
@@ -20,7 +20,7 @@
     }
 
     &--gutters-large > div {
-      padding-right: 55px;
+      padding-right: 5%;
 
       @mixin atLarge{
         padding-right: 100px;
@@ -49,6 +49,55 @@
 
       &row__medium-8--smaller{
         width: 63%;
+      }
+    }
+
+    @mixin atLarge{
+      &__large-4{
+        float: left;
+        width: 33.333%;
+      }
+
+      &row__large-4--larger{
+        width: 37%;
+      }
+
+      &__large-6{
+        float: left;
+        width: 50%;
+      }
+
+      &__large-8{
+        float: left;
+        width: 66.667%;
+      }
+
+      &row__large-8--smaller{
+        width: 63%;
+      }
+    }
+
+    /* Equal Height Rules */
+
+    &--equal-height-at-medium{
+      @mixin atMedium{
+        display: flex;
+      }
+
+      & > div {
+        float: none;
+        display: flex;
+      }
+    }
+
+    &--equal-height-at-large{
+      @mixin atLarge{
+        display: flex;
+      }
+
+      & > div {
+        float: none;
+        display: flex;
       }
     }
 }
