@@ -11,6 +11,11 @@
 
   @mixin atMedium{
     background-color: rgba($mainBlue, 0.3);
+    position: fixed;
+  }
+
+  &--fill-dark{
+    background-color: rgba(23, 51, 72, 0.8);
   }
 
   &__btn-container {
@@ -43,6 +48,10 @@
     @mixin atMedium{
       left: auto;
       transform: translateX(0) scale(1);
+
+      .site-header--fill-dark & {
+        transform: scale(0.57);
+      }
     }
   }
 
