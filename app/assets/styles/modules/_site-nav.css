@@ -1,7 +1,15 @@
 .site-nav{
+  padding-top: 10px;
+
+  @mixin atMedium{
+    padding-top: 0;
+  }
 
   &--pull-right{
-    float: right;
+
+    @mixin atMedium{
+      float: right;
+    }
   }
 
   ul{
@@ -12,8 +20,25 @@
 
   li{
     list-style: none;
-    float: left;
-    padding-right: 1.25rem;
+    display: inline-block;
+    padding-right: 0.75rem;
+
+    @mixin atSmall{
+      padding-right: 1.25rem;
+    }
+
+    @mixin atMedium{
+      float: left;
+      display: block;
+    }
+  }
+
+  li:last-child{
+    padding-right: 0;
+
+    @mixin atMedium{
+      padding-right: 1.25rem;
+    }
   }
 
   a{
@@ -21,6 +46,14 @@
     text-decoration: none;
     font-weight: 300;
     display: block;
-    padding: 12px 0;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    background-color: rgba($mainBlue, 0.55);
+
+    @mixin atMedium{
+      padding: 12px 0;
+      font-size: 1rem;
+      background-color: transparent;
+    }
   }
 }

@@ -88,6 +88,8 @@ class MobileMenu {
   constructor() {
     this.menuIcon = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.site-header__menu-icon');
     this.menuContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.site-header__menu-content');
+    this.siteLogo = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.site-header__logo');
+    this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.site-header');
     this.events();
   }
 
@@ -97,6 +99,9 @@ class MobileMenu {
 
   toggleTheMenu() {
     this.menuContent.toggleClass('site-header__menu-content--is-visible');
+    this.siteLogo.toggleClass('site-header__logo--hidden');
+    this.siteHeader.toggleClass('site-header--expanded');
+    this.menuIcon.toggleClass("site-header__menu-icon--x")
   }
 }
 
