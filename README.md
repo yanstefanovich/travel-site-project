@@ -9,9 +9,8 @@ This project webpage for a non-existing travel company, ClearView Escapes, has b
 * PostCSS - use of postcss modules to improve development environment
 * Gulp - build css files from postcss syntax and build sprite svg files
 * BrowserSync - used with Gulp to run webpage and auto refresh upon changes
-* JavaScript and jQuery - toggle-able mobile menu, custom menu bar and animations, sticky navigation, site navigation, reveal elements on scroll and modal overlay
+* JavaScript and jQuery - toggle-able mobile menu, custom menu bar and animations, sticky navigation, site navigation, reveal elements on scroll and modal/overlay
 
 ## To-Do's:
-* Create Modal Overlay
 * Implement Lazy Loading
 * Deploy Application

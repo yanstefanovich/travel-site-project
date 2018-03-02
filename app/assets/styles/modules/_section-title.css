@@ -22,6 +22,16 @@
       margin-right: 0.5rem;
       vertical-align: top;
     }
+
+    &--centered{
+      margin-right: 0.5rem;
+      vertical-align: middle;
+
+      @mixin atSmall{
+        margin-right: 0.5rem;
+        vertical-align: -5%;
+      }
+    }
   }
 
   &__icon-top{
@@ -34,7 +44,6 @@
       margin-right: 0.5rem;
       vertical-align: -18%;
     }
-
   }
 
   &--blue{
@@ -46,6 +55,15 @@
 
     @mixin atLarge{
       margin-bottom: 3.25rem;
+    }
+  }
+
+  &--modal{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+
+    @mixin atSmall{
+      margin-bottom: 2.75rem;
     }
   }
 }

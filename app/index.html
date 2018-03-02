@@ -7,6 +7,7 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -19,7 +20,7 @@
       </div>
       <div class="site-header__menu-content">
         <div class="site-header__btn-container">
-          <a href="#" class="btn">Get in Touch</a>
+          <a href="#" class="btn open-modal">Get in Touch</a>
         </div>
         <nav class="site-nav site-nav--pull-right">
           <ul>
@@ -53,7 +54,7 @@
           <h1 class="large-hero__title">Your clarity.</h1>
           <h2 class="large-hero__subtitle">One trip away.</h2>
           <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
-          <p><a href="#" class="btn btn--orange btn--large">Get Started Today</a></p>
+          <p><a href="#" class="btn btn--orange btn--large open-modal">Get Started Today</a></p>
         </div>
       </div>
   </div>
@@ -237,12 +238,28 @@
   <footer class="site-footer">
     <div class="wrapper">
       <p><span class="site-footer__text">Webpage Created by Yan Stefanovich, 2018</span>
-         <a href="#" class="btn btn--orange">Get in Touch</a>
+         <a href="#" class="btn btn--orange open-modal">Get in Touch</a>
       </p>
     </div>
   </footer>
-  <script src="../temp/scripts/app.js">
-
-  </script>
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="section-title section-title--blue section-title--modal">
+        <span class="icon icon--mail section-title__icon section-title__icon--centered"></span>
+        Get in <strong>Touch</strong>
+      </h2>
+      <div class="wrapper wrapper--narrow">
+        <div class="generic-content-container">
+          <p class="modal__text">Unforunately, this is <strong>NOT</strong> a real service. This webpage showcases my web developing skills and knowledge. If you enjoyed this webpage and are interested in my work, I invite you to take a look at my other works. You can find out more about me and about what I do on my website in the link below.</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://yanstefanovich.github.io/" class="social-icons__icon" target="_blank" title="Yan Stefanovich Website"><span class="fas fa-globe fa-4x"></span></a>
+          <a href="https://github.com/yanstefanovich/travel-site-project" class="social-icons__icon" target="_blank" title="This Webpage's Repository"><span class="fab fa-github fa-4x"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div>
+  <script src="../temp/scripts/app.js"></script>
 </body>
 </html>

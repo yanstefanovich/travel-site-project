@@ -1,0 +1,17 @@
+.social-icons{
+  text-align: center;
+
+  &__icon{
+    background-color: $mainOrange;
+    color: white;
+    margin: 0 12px;
+    padding: 12px;
+    border-radius: 5px;
+    display: inline-block;
+
+    span{
+      display: block;
+      color: white;
+    }
+  }
+}

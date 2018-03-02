@@ -584,6 +584,10 @@ a{
     max-width: 976px;
   }
 
+.wrapper--narrow{
+    max-width: 470px;
+  }
+
 .wrapper .wrapper{
     padding-left: 0;
     padding-right: 0;
@@ -883,10 +887,22 @@ a{
   }
   }
 
+.section-title__icon--centered{
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+@media(min-width: 530px){
+
+.section-title__icon--centered{
+        margin-right: 0.5rem;
+        vertical-align: -5%
+    }
+  }
+
 .section-title__icon-top{
     display: block;
     margin: 0 auto 0.5em auto;
-
   }
 
 @media(min-width: 530px){
@@ -896,7 +912,6 @@ a{
       margin: 0;
       margin-right: 0.5rem;
       vertical-align: -18%
-
   }
   }
 
@@ -912,6 +927,18 @@ a{
 
 .section-title--no-b-margin-until-large{
       margin-bottom: 3.25rem
+  }
+  }
+
+.section-title--modal{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+@media(min-width: 530px){
+
+.section-title--modal{
+      margin-bottom: 2.75rem
   }
   }
 
@@ -1397,3 +1424,89 @@ a{
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+
+.modal{
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(255,255,255,0.94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+.modal__inner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+.modal__text{
+    text-align: center;
+  }
+
+.modal__close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.67rem;
+    -webkit-transform: scaleX(1.45);
+            transform: scaleX(1.45);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    color: #2f5572;
+  }
+
+@media(min-width: 530px){
+
+.modal__close{
+      top: 15px;
+      right: 15px;
+      font-size: 2rem
+  }
+  }
+
+@media(min-width: 800px){
+
+.modal__close{
+      font-size: 2.5rem
+  }
+  }
+
+.modal__close:hover{
+      color: #d59541;
+      cursor: pointer;
+    }
+
+.modal--reveal{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+.social-icons{
+  text-align: center;
+}
+
+.social-icons__icon{
+    background-color: #d59541;
+    color: white;
+    margin: 0 12px;
+    padding: 12px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+.social-icons__icon span{
+      display: block;
+      color: white;
+    }
