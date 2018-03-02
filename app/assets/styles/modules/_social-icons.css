@@ -12,6 +12,7 @@
     span{
       display: block;
       color: white;
+      text-indent: -9999px;
     }
   }
 }

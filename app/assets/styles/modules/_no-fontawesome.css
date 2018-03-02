@@ -1,0 +1,6 @@
+.no-fontawesome{
+  &-i2svg-active .social-icons span,
+  &-i2svg-complete .social-icons span{
+    text-indent: 0px;
+  }
+}

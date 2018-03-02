@@ -50,7 +50,7 @@
       transform: translateX(0) scale(1);
 
       .site-header--fill-dark & {
-        transform: scale(0.57);
+        transform: scale(0.555);
       }
     }
   }
