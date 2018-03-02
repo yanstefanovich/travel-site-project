@@ -8,6 +8,7 @@
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link rel="stylesheet" href="temp/styles/styles.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="/temp/scripts/vendor.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -70,8 +71,8 @@
           everyone</strong>.
       </h3>
       <div class="wrapper wrapper--medium wrapper--b-margin">
-        <img sizes="(min-width: 970px) 976px, 100vw"
-             srcset="assets/images/first-trip-low-res.jpg 565w,
+        <img sizes="(min-width: 970px) 976px, 100vw" class="lazyload"
+             data-srcset="assets/images/first-trip-low-res.jpg 565w,
                      assets/images/first-trip.jpg 976w,
                      assets/images/first-trip-hi-dpi.jpg 1952w"
              alt="Couple walking down a street.">
@@ -81,14 +82,14 @@
         <div class="row__medium-4 row__medium-4--larger">
           <picture>
             <source sizes="404px"
-                    srcset="assets/images/our-start.jpg 404w,
+                    data-srcset="assets/images/our-start.jpg 404w,
                             assets/images/our-start-hi-dpi.jpg 808w"
                     media="(min-width: 1020px)">
             <source sizes="320px"
-                    srcset="assets/images/our-start-portrait.jpg 382w,
+                    data-srcset="assets/images/our-start-portrait.jpg 382w,
                             assets/images/our-start-portrait-hi-dpi.jpg 764w"
                     media="(min-width: 800px)">
-            <img srcset="assets/images/our-start-landscape.jpg 800w,
+            <img class="lazyload" data-srcset="assets/images/our-start-landscape.jpg 800w,
                          assets/images/our-start-landscape-hi-dpi.jpg 1600w"
                  alt="Our founder, Jane Doe">
           </picture>
@@ -167,7 +168,7 @@
     </div>
   </section>
 
-  <div class="page-section page-section--testimonials page-section--no-b-padding-until-large"
+  <div class="page-section page-section--testimonials page-section--no-b-padding-until-large lazyload"
    id="testimonials" data-link-match="#testimonials-link">
     <div class="wrapper wrapper--no-padding-until-large">
 
@@ -180,8 +181,8 @@
         <div class="row__large-4">
           <div class="testimonial">
             <div class="testimonial__photo">
-              <img sizes ="160px"
-                   srcset="assets/images/testimonial-jane.jpg 160w,
+              <img sizes ="160px" class="lazyload"
+                   data-srcset="assets/images/testimonial-jane.jpg 160w,
                            assets/images/testimonial-jane-hi-dpi.jpg 320w"
                    alt="Jane Doe">
             </div>
@@ -199,8 +200,8 @@
         <div class="row__large-4">
           <div class="testimonial">
             <div class="testimonial__photo">
-              <img sizes="160px"
-                   srcset="assets/images/testimonial-john.jpg 160w,
+              <img sizes="160px" class="lazyload"
+                   data-srcset="assets/images/testimonial-john.jpg 160w,
                            assets/images/testimonial-john-hi-dpi.jpg 320w"
                     alt="John Smith">
             </div>
@@ -216,8 +217,8 @@
         <div class="row__large-4">
           <div class="testimonial">
             <div class="testimonial__photo">
-              <img sizes="160px"
-                   srcset="assets/images/testimonial-cat.jpg 160w,
+              <img sizes="160px" class="lazyload"
+                   data-srcset="assets/images/testimonial-cat.jpg 160w,
                         assets/images/testimonial-cat-hi-dpi.jpg 320w"
                    alt="Cat McKitty">
             </div>

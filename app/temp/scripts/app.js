@@ -11313,6 +11313,7 @@ class RevealOnScroll {
 
 class StickyHeader{
   constructor() {
+    this.lazyImages = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.lazyload');
     this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.site-header');
     this.triggerElement = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.large-hero__title');
     this.createHeaderWaypoint();
@@ -11322,6 +11323,13 @@ class StickyHeader{
     this.createPageSectionWaypoints();
 
     this.addSmoothScrolling();
+    this.refreshWaypoints();
+  }
+
+  refreshWaypoints() {
+    this.lazyImages.on('load', function() {
+      Waypoint.refreshAll();
+    });
   }
 
   createHeaderWaypoint() {
